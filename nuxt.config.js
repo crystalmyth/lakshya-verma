@@ -2,7 +2,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: 'static',
   head: {
-    title: 'trying',
+    title: 'Lakshya Verma | Portfolio',
     meta: [{
         charset: 'utf-8'
       },

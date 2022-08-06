@@ -1,7 +1,9 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  publicPath: process.env.NODE_ENV === 'production' ?
-    '/hello-world/' : '/',
+  target: 'static',
+  router: {
+    base: '/lakshya-verma/'
+  },
   head: {
     title: 'trying',
     meta: [{

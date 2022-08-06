@@ -7,7 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "sh deploy.sh",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
     "lint": "npm run lint:js && npm run lint:prettier",
@@ -39,6 +39,7 @@
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-vue": "^8.2.0",
     "prettier": "^2.5.1",
+    "push-dir": "^0.4.1",
     "sass": "^1.54.0",
     "sass-loader": "10.1.1"
   }

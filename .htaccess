@@ -1,0 +1,14 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^(www.)?crystalmyth.github.io/lakshya-verma$
+
+RewriteCond %{REQUEST_URI} !^/dist/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ /dist/$1
+
+RewriteCond %{HTTP_HOST} ^(www.)?crystalmyth.github.io/lakshya-verma$
+RewriteRule ^(/)?$ dist/index.html [L]

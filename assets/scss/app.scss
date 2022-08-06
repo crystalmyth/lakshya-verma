@@ -18,7 +18,7 @@ body {
   }
 
   @media (orientation: portrait) {
-    font-size: 170%;
+    font-size: 150%;
 
     .row {
       display: grid;
@@ -29,16 +29,18 @@ body {
         width: 100% !important;
       }
     }
-  }
 
-  @media screen and (min-width: 500px) {
-    .row {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
+    @media screen and (max-width: 900px) {
+      font-size: 70% !important;
 
-      [class*='col-'] {
-        max-width: 100% !important;
-        width: 100% !important;
+      .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        [class*='col-'] {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
       }
     }
   }

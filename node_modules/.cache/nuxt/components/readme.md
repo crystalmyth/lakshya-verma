@@ -14,6 +14,6 @@ You can directly use them in pages and other components without the need to impo
 - `<HeroSection>` | `<hero-section>` (components/HeroSection.vue)
 - `<QuerySection>` | `<query-section>` (components/QuerySection.vue)
 - `<ServiceSection>` | `<service-section>` (components/ServiceSection.vue)
-- `<IncludeNavbar>` | `<include-navbar>` (components/include/Navbar.vue)
 - `<PartialLines>` | `<partial-lines>` (components/partial/Lines.vue)
 - `<PartialThankYou>` | `<partial-thank-you>` (components/partial/ThankYou.vue)
+- `<IncludeNavbar>` | `<include-navbar>` (components/include/Navbar.vue)

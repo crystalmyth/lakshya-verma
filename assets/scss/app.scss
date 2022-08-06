@@ -16,6 +16,32 @@ body {
   @media screen and (min-width: 2000px) {
     font-size: 180%;
   }
+
+  @media (orientation: portrait) {
+    font-size: 170%;
+
+    .row {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+
+      [class*='col-'] {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    .row {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+
+      [class*='col-'] {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+    }
+  }
 }
 
 body {

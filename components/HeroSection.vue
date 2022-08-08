@@ -55,16 +55,16 @@
 </template>
 
 <script>
-import Lines from '@/components/partial/Lines'
+import Lines from "@/components/partial/Lines";
 export default {
   components: {
     lines: Lines,
   },
-}
+};
 </script>
 
 <style lang="scss">
-@import '@/assets/scss/_variable.scss';
+@import "@/assets/scss/_variable.scss";
 .hero-section {
   text-align: center;
   @media screen and (max-width: $small) {
@@ -83,7 +83,7 @@ export default {
 
   h1,
   h2 {
-    font-family: 'Libre Baskerville', serif;
+    font-family: "Libre Baskerville", serif;
     font-size: 4rem;
     font-weight: 500;
     @media screen and (max-width: $small) {
@@ -121,6 +121,8 @@ export default {
     transform: translateX(-50%);
     @media screen and (max-width: $small) {
       bottom: -6rem;
+      height: 60rem;
+      max-width: 200%;
     }
   }
 }

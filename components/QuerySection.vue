@@ -58,94 +58,94 @@
 </template>
 
 <script>
-import emailjs from '@emailjs/browser'
-import ThankYouVue from './partial/ThankYou.vue'
+import emailjs from "@emailjs/browser";
+import ThankYouVue from "./partial/ThankYou.vue";
 export default {
   props: {
     popup: Boolean,
   },
   components: {
-    'thank-you': ThankYouVue,
+    "thank-you": ThankYouVue,
   },
   data() {
     return {
       display: false,
       errors: {
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
       },
-      name: '',
-      email: '',
-      message: '',
-      subject: '',
-    }
+      name: "",
+      email: "",
+      message: "",
+      subject: "",
+    };
   },
   mounted() {
-    ;(function () {
+    (function () {
       // https://dashboard.emailjs.com/admin/account
-      emailjs.init('4IkNR_VcYzrLhazwf')
-    })()
+      emailjs.init("4IkNR_VcYzrLhazwf");
+    })();
   },
   methods: {
     Close() {
-      this.$emit('changePopup', !this.popup)
+      this.$emit("changePopup", !this.popup);
     },
     checkForm: function (e) {
       if (this.email && this.name && this.subject && this.message) {
-        this.sendEmail()
-        return true
+        this.sendEmail();
+        return true;
       }
 
       this.errors = {
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-      }
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      };
 
       if (!this.name) {
-        this.errors.name = 'Name required.'
+        this.errors.name = "Name required.";
       }
       if (!this.email) {
-        this.errors.email = 'Email required.'
+        this.errors.email = "Email required.";
       }
       if (!this.subject) {
-        this.errors.subject = 'Subject required.'
+        this.errors.subject = "Subject required.";
       }
       if (!this.message) {
-        this.errors.message = 'Message required.'
+        this.errors.message = "Message required.";
       }
 
-      e.preventDefault()
+      e.preventDefault();
     },
     DisplayThanks() {
-      this.display = true
+      this.display = true;
       setTimeout(() => {
-        this.display = false
-      }, 3000)
+        this.display = false;
+      }, 3000);
     },
     sendEmail(e) {
       try {
-        emailjs.send('service_i35fh9e', 'template_lu79f8t', {
+        emailjs.send("service_i35fh9e", "template_lu79f8t", {
           name: this.name,
           email: this.email,
           subject: this.subject,
           message: this.message,
-        })
+        });
         // Reset form field
-        this.name = ''
-        this.email = ''
-        this.message = ''
-        this.subject = ''
-        this.DisplayThanks()
+        this.name = "";
+        this.email = "";
+        this.message = "";
+        this.subject = "";
+        this.DisplayThanks();
       } catch (error) {
-        console.log({ error })
+        console.log({ error });
       }
     },
   },
-}
+};
 </script>
 
 <style lang="scss">
@@ -161,6 +161,11 @@ export default {
   background-color: rgba(0, 0, 0, 0.5);
   .container-fluid {
     width: 50%;
+    @media screen and (max-width: 800px) {
+      width: 95%;
+      transform: scale(0.9);
+      margin-top: 5rem;
+    }
     background-color: #fff;
     padding: 3rem;
     border-radius: 0.7rem;

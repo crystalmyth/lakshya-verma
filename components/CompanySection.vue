@@ -15,7 +15,7 @@
             data-aos-delay="500"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-          >Some Of Companies I worked with :</h2>
+          >Some Of Companies I have worked with :</h2>
           <p
             data-aos="fade-right"
             data-aos-delay="500"
@@ -126,21 +126,21 @@
 </template>
 
 <script>
-import Lines from '@/components/partial/Lines'
+import Lines from "@/components/partial/Lines";
 export default {
   components: {
     lines: Lines,
   },
-}
+};
 </script>
 
 <style lang="scss">
-@import '@/assets/scss/_variable.scss';
+@import "@/assets/scss/_variable.scss";
 .company-section {
   .container-fluid {
     padding-top: 10rem;
     h2 {
-      font-family: 'Libre Baskerville', serif;
+      font-family: "Libre Baskerville", serif;
       font-size: 4rem;
       font-weight: 500;
       margin-bottom: 4rem;
@@ -185,12 +185,13 @@ export default {
   &-body {
     display: grid;
     grid-template-areas:
-      'img-1 img-1 img-2'
-      'img-3 img-4 img-5'
-      'img-6 img-7 img-7';
+      "img-1 img-1 img-2"
+      "img-3 img-4 img-5"
+      "img-6 img-7 img-7";
     grid-gap: 6rem;
     @media screen and (max-width: 800px) {
       padding-bottom: 4rem;
+      grid-gap: 2rem;
     }
     img {
       object-fit: contain;

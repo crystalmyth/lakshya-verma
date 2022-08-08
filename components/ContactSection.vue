@@ -78,35 +78,41 @@
 </template>
 
 <script>
-import Lines from '@/components/partial/Lines'
+import Lines from "@/components/partial/Lines";
 export default {
-  props: ['popup'],
+  props: ["popup"],
   components: {
     lines: Lines,
   },
   methods: {
     PopupQuery() {
-      this.$emit('changePopup', !this.popup)
+      this.$emit("changePopup", !this.popup);
     },
   },
-}
+};
 </script>
 
 <style lang="scss">
-@import '@/assets/scss/_variable.scss';
+@import "@/assets/scss/_variable.scss";
 .contact-section {
   text-align: center;
 
   .container-fluid {
     height: 100vh !important;
+    @media screen and (max-width: 800px) {
+      height: 130vh !important;
+    }
     padding-top: 6rem;
     position: relative;
   }
 
   h2 {
-    font-family: 'Libre Baskerville', serif;
+    font-family: "Libre Baskerville", serif;
     font-size: 4rem;
     font-weight: 500;
+    @media screen and (max-width: 800px) {
+      font-size: 3rem;
+    }
     span {
       background-color: $higlight;
       display: inline-block;
@@ -124,6 +130,7 @@ export default {
     margin-top: 2.5rem;
     @media screen and (max-width: 800px) {
       width: 100%;
+      font-size: 1.3rem;
     }
     span {
       font-weight: bold;

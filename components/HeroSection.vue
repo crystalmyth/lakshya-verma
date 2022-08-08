@@ -119,7 +119,10 @@ export default {
     bottom: 0rem;
     left: 50%;
     transform: translateX(-50%);
-    @media screen and (max-width: $small) {
+    @media screen and (max-width: 800px) {
+      bottom: -8rem;
+    }
+    @media screen and (min-width: 800px) and (orientation: portrait) {
       bottom: -6rem;
       height: 60rem;
       max-width: 200%;

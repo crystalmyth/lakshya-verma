@@ -6,9 +6,9 @@ export { default as FeaturedSection } from '../../components/FeaturedSection.vue
 export { default as HeroSection } from '../../components/HeroSection.vue'
 export { default as QuerySection } from '../../components/QuerySection.vue'
 export { default as ServiceSection } from '../../components/ServiceSection.vue'
-export { default as IncludeNavbar } from '../../components/include/Navbar.vue'
 export { default as PartialLines } from '../../components/partial/Lines.vue'
 export { default as PartialThankYou } from '../../components/partial/ThankYou.vue'
+export { default as IncludeNavbar } from '../../components/include/Navbar.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

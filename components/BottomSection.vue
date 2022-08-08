@@ -25,13 +25,16 @@
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style lang="scss">
 .bottom-section {
   position: fixed;
   bottom: -3rem;
+  @media screen and (max-width: 1500px) and (orientation: portrait) {
+    bottom: -8rem;
+  }
   left: 0;
   width: 100%;
   height: 15rem;

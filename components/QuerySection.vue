@@ -161,7 +161,7 @@ export default {
   background-color: rgba(0, 0, 0, 0.5);
   .container-fluid {
     width: 50%;
-    @media screen and (max-width: 800px) {
+    @media screen and (orientation: portrait) {
       width: 95%;
       transform: scale(0.9);
       margin-top: 5rem;

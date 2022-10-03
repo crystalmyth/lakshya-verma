@@ -2,7 +2,8 @@
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/apple/Documents/GitHub/lakshya-verma/pages/index.vue",
-    "chunkName": "pages/index"
+    "component": "/Applications/XAMPP/xamppfiles/htdocs/paean/lakshya-verma/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_4bc2f335"
   }
 ]

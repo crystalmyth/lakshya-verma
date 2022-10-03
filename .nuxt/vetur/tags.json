@@ -23,13 +23,13 @@
   "ServiceSection": {
     "description": "Auto imported from components/ServiceSection.vue"
   },
+  "IncludeNavbar": {
+    "description": "Auto imported from components/include/Navbar.vue"
+  },
   "PartialLines": {
     "description": "Auto imported from components/partial/Lines.vue"
   },
   "PartialThankYou": {
     "description": "Auto imported from components/partial/ThankYou.vue"
-  },
-  "IncludeNavbar": {
-    "description": "Auto imported from components/include/Navbar.vue"
   }
 }

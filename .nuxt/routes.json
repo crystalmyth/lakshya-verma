@@ -3,7 +3,6 @@
     "name": "index",
     "path": "/",
     "component": "/Applications/XAMPP/xamppfiles/htdocs/paean/lakshya-verma/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_4bc2f335"
+    "chunkName": "pages/index"
   }
 ]

@@ -1,14 +1,14 @@
-export { default as BottomSection } from '../../components/BottomSection.vue'
-export { default as CompanySection } from '../../components/CompanySection.vue'
-export { default as ContactSection } from '../../components/ContactSection.vue'
-export { default as ExperienceSection } from '../../components/ExperienceSection.vue'
-export { default as FeaturedSection } from '../../components/FeaturedSection.vue'
-export { default as HeroSection } from '../../components/HeroSection.vue'
-export { default as QuerySection } from '../../components/QuerySection.vue'
-export { default as ServiceSection } from '../../components/ServiceSection.vue'
-export { default as IncludeNavbar } from '../../components/include/Navbar.vue'
-export { default as PartialLines } from '../../components/partial/Lines.vue'
-export { default as PartialThankYou } from '../../components/partial/ThankYou.vue'
+export const BottomSection = () => import('../../components/BottomSection.vue' /* webpackChunkName: "components/bottom-section" */).then(c => wrapFunctional(c.default || c))
+export const CompanySection = () => import('../../components/CompanySection.vue' /* webpackChunkName: "components/company-section" */).then(c => wrapFunctional(c.default || c))
+export const ContactSection = () => import('../../components/ContactSection.vue' /* webpackChunkName: "components/contact-section" */).then(c => wrapFunctional(c.default || c))
+export const ExperienceSection = () => import('../../components/ExperienceSection.vue' /* webpackChunkName: "components/experience-section" */).then(c => wrapFunctional(c.default || c))
+export const FeaturedSection = () => import('../../components/FeaturedSection.vue' /* webpackChunkName: "components/featured-section" */).then(c => wrapFunctional(c.default || c))
+export const HeroSection = () => import('../../components/HeroSection.vue' /* webpackChunkName: "components/hero-section" */).then(c => wrapFunctional(c.default || c))
+export const QuerySection = () => import('../../components/QuerySection.vue' /* webpackChunkName: "components/query-section" */).then(c => wrapFunctional(c.default || c))
+export const ServiceSection = () => import('../../components/ServiceSection.vue' /* webpackChunkName: "components/service-section" */).then(c => wrapFunctional(c.default || c))
+export const IncludeNavbar = () => import('../../components/include/Navbar.vue' /* webpackChunkName: "components/include-navbar" */).then(c => wrapFunctional(c.default || c))
+export const PartialLines = () => import('../../components/partial/Lines.vue' /* webpackChunkName: "components/partial-lines" */).then(c => wrapFunctional(c.default || c))
+export const PartialThankYou = () => import('../../components/partial/ThankYou.vue' /* webpackChunkName: "components/partial-thank-you" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
